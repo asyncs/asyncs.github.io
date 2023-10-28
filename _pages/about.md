@@ -16,9 +16,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm an MS student in the [Computer Engineering Department](https://w3.cs.bilkent.edu.tr) at [Bilkent University](https://w3.bilkent.edu.tr/bilkent/), studying Task and Motion Planning (TAMP). My advisor is [Dr. Ozgur S. Oguz](https://oz-oguz.github.io), and I'm a member of the [Bilkent Learning for Intelligent Robot Assistants Lab (LIRA)](https://bilkent-lira.github.io). My research interests are TAMP problems, reinforcement learning, and their integrations with causal inference and affordances.
+I'm an M.S. student in the [Computer Engineering Department](https://w3.cs.bilkent.edu.tr) at [Bilkent University](https://w3.bilkent.edu.tr/bilkent/), studying Task and Motion Planning (TAMP). My advisor is [Dr. Ozgur S. Oguz](https://oz-oguz.github.io), and I'm a member of the [Bilkent Learning for Intelligent Robot Assistants Lab (LIRA)](https://bilkent-lira.github.io). My research interests are TAMP problems, reinforcement learning, and their integrations with causal inference and affordances.
 
-I earned my B.Sc. from the [Electrical and Electronics Engineering Department at Bilkent University](https://ee.bilkent.edu.tr/en/), majoring in electrical and electronics engineering, with an emphasis on machine learning.
+I obtained my B.S. from the [Electrical and Electronics Engineering Department at Bilkent University](https://ee.bilkent.edu.tr/en/), majoring in electrical and electronics engineering, with an emphasis on machine learning.
 
 For a comprehensive overview of my professional journey, please refer to my [CV](assets/pdf/Arda_Sarp_Yenicesu_CV.pdf).
 
