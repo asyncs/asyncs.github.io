@@ -8,7 +8,7 @@ middle_name:
 last_name: Yenicesu
 email: sarp.yenicesu@bilkent.edu.tr
 description: A concise record of my professional journey. Here, you'll find my bio, a collection of publications, and insights from my teaching experiences.
-footer_text: >
+footer_text:
 
 keywords:  # add your own keywords or leave empty
 
@@ -64,11 +64,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: asyncs # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
+twitter_username: ASYenicesu # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: arda-sarp-yenicesu # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -90,7 +90,7 @@ dblp_url: # your DBLP profile url
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
 lastfm_id: # your lastfm id
-spotify_id: # your spotify id
+spotify_id: asyncs # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
@@ -100,8 +100,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
