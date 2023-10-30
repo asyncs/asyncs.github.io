@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Cross-Lingual Transfer Learning for Misinformation Detection: Investigating Performance Across Multiple Languages](https://novaresearch.unl.pt/en/publications/language-data-and-knowledge-2023-ldk-2023-proceedings-of-the-4th-) has been accepted to [DiTox 2023](https://ditox.ait.ac.at).
+Our paper [Cross-Lingual Transfer Learning for Misinformation Detection: Investigating Performance Across Multiple Languages](https://aclanthology.org/2023.ldk-1.59/) has been accepted to [DiTox 2023](https://ditox.ait.ac.at).
