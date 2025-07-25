@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research – Arda Sarp Yenicesu</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f0;
+      color: #181818;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inconsolata', monospace;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 2.5rem 0 2.5rem 3vw;
+      padding: 0 2rem 0 0;
+      background: #fff8f0;
+      min-height: 56px;
+    }
+    .name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color:#2201B1;
+      margin-left: 1.5rem;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+      color: #181818;
+      font-weight: 500;
+      opacity: 0.85;
+      transition: opacity 0.2s, text-decoration-thickness 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a.active {
+      text-decoration-thickness: 4px;
+      opacity: 1;
+      color:#2201B1;
+    }
+    .nav-links a:hover {
+      opacity: 1;
+      color:#2201B1;
+    }
+    .container {
+      max-width: 900px;
+      margin-left: 3vw;
+      padding: 0 2rem 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h1, .section-title {
+      color:#2201B1;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1.2rem;
+      color: #2201B1;
+      letter-spacing: 0.5px;
+    }
+    .pub-block {
+      margin-bottom: 2.2rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid #e0d7ce;
+      width: 100%;
+      color: #181818;
+    }
+    .pub-title {
+      font-size: 1.18rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color: #181818;
+      line-height: 1.3;
+    }
+    .pub-date {
+      font-size: 0.98rem;
+      color: #444;
+      margin-bottom: 0.2rem;
+    }
+    .pub-authors {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      color: #222;
+    }
+    .pub-authors .me {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .pub-venue {
+      font-size: 0.98rem;
+      color:#2201B1;
+      margin-bottom: 0.2rem;
+    }
+    .pub-desc {
+      font-size: 1.01rem;
+      color: #222;
+      margin-bottom: 0.3rem;
+    }
+    .pub-links a {
+      color:#2201B1;
+      text-decoration: underline;
+      margin-right: 1.2rem;
+      font-size: 0.98rem;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+    .pub-links a:hover {
+      opacity: 1;
+    }
+    .equal-note {
+      font-size: 0.92rem;
+      color: #EC4C02;
+      margin-left: 0.5rem;
+    }
+    @media (max-width: 800px) {
+      .navbar, .container {
+        max-width: 98vw;
+        margin-left: 2vw;
+        padding-right: 1rem;
+      }
+      .name { margin-left: 1rem; }
+    }
+    @media (max-width: 500px) {
+      .navbar, .container {
+        margin-left: 0.5vw;
+        padding-right: 0.5rem;
+      }
+      .nav-links { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="name">Arda Sarp Yenicesu</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="contact.html">Contact</a>
+      <a href="YenicesuCV.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-title">Journals</div>
+
+    <div class="pub-block">
+        <div class="pub-title">Locally Adaptive One‑Class Classifier Fusion with Dynamic ℓ<sub>p</sub>‑Norm Constraints for Robust Anomaly Detection</div>
+        <div class="pub-date">2025</div>
+        <div class="pub-authors">Sepehr Nourmohammadi, <span class="me">Arda Sarp Yenicesu</span>, Shervin R. Arashloo, Ozgur S. Oguz</div>
+        <div class="pub-venue">Pattern Recognition</div>
+        <div class="pub-desc">Introduces an interior‑point optimisation scheme for locally adaptive ensemble fusion, delivering significant speed‑ups and accuracy on benchmark anomaly‑detection sets.</div>
+        <div class="pub-links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320325008659" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://zenodo.org/records/15694846" target="_blank" rel="noopener noreferrer">LiraAnomaly Dataset</a>
+        </div>
+      </div>
+
+    <div class="pub-block">
+    <div class="pub-title">H‑MaP: An Iterative and Hybrid Sequential Manipulation Planner</div>
+    <div class="pub-date">2025</div>
+    <div class="pub-authors">Berk Cicek<sup>*</sup>, <span class="me">Arda Sarp Yenicesu</span><sup>*</sup>, Cankut Bora Tuncer<sup>*</sup>, Kutay Demiray, Ozgur S. Oguz<span class="equal-note">*Equal contribution</span></div>
+    <div class="pub-venue">IEEE Robotics and Automation Letters</div>
+    <div class="pub-desc">Combines sampling and optimisation‑based planning to tackle sequential manipulation tasks involving tool use and bimanual coordination.</div>
+    <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/abstract/document/10930570" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://sites.google.com/view/h-map/" target="_blank" rel="noopener noreferrer">Project Site</a> <a href="https://github.com/berk-cicek/HMaP" target="_blank" rel="noopener noreferrer">Code</a> 
+    </div>
+    </div> 
+
+    <div class="pub-block">
+        <div class="pub-title">Interpretable Responsibility Sharing as a Heuristic for Task and Motion Planning</div>
+        <div class="pub-date">2024</div>
+        <div class="pub-authors"><span class="me">Arda Sarp Yenicesu</span><sup>*</sup>, Sepehr Nourmohammadi<sup>*</sup>, Berk Cicek, Ozgur S. Oguz<span class="equal-note">*Equal contribution</span></div>
+        <div class="pub-venue">Robotics & Autonomous Systems — under review</div>
+        <div class="pub-desc">Proposes the IRS heuristic that leverages human biases and auxiliary objects to make task‑and‑motion planning both more efficient and interpretable.</div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2409.05586" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/asyncs/IRS" target="_blank" rel="noopener noreferrer">Code</a> 
+        </div>
+      </div>
+
+
+    <div class="section-title">Workshops</div>
+    <div class="pub-block">
+        <div class="pub-title">Cross‑Lingual Transfer Learning for Misinformation Detection</div>
+        <div class="pub-date">2023</div>
+        <div class="pub-authors">Oguzhan Ozcelik<sup>*</sup>, <span class="me">Arda Sarp Yenicesu</span><sup>*</sup>, Onur Yildirim<sup>*</sup>, Dilruba S. Haliloglu<sup>*</sup>, Erdem E. Eroglu<sup>*</sup>, Fazli Can<span class="equal-note">*Equal contribution</span></div>
+        <div class="pub-venue">International Workshop on Disinformation and Toxic Content Analysis</div>
+        <div class="pub-desc">Studies transformer‑based cross‑lingual misinformation detection across English, Arabic, Chinese, Turkish and Polish, highlighting language‑pair asymmetries.</div>
+        <div class="pub-links">
+            <a href="https://aclanthology.org/2023.ldk-1.59/" target="_blank" rel="noopener noreferrer">Paper</a>
+        </div>
+      </div>
+    <!-- Add more workshop papers here -->
+
+    <div class="section-title">Preprints</div>
+    <div class="pub-block">
+        <div class="pub-title">CUER: Corrected Uniform Experience Replay for Off‑Policy Continuous Deep RL Algorithms</div>
+        <div class="pub-date">2024</div>
+        <div class="pub-authors"><span class="me">Arda Sarp Yenicesu</span><sup>*</sup>, Furkan B. Mutlu<sup>*</sup>, Suleyman S. Kozat, Ozgur S. Oguz<span class="equal-note">*Equal contribution</span></div>
+        <div class="pub-venue">arXiv preprint</div>
+        <div class="pub-desc">Mitigates sampling bias in replay buffers, yielding faster and stabler learning across MuJoCo benchmarks.</div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2406.09030" target="_blank" rel="noopener noreferrer">Paper</a>
+        </div>
+      </div>
+    <div class="pub-block">
+        <div class="pub-title">FViT‑Grasp: Grasping Objects with Fast Vision Transformers</div>
+        <div class="pub-date">2023</div>
+        <div class="pub-authors"><span class="me">Arda Sarp Yenicesu</span><sup>*</sup>, Berk Cicek<sup>*</sup>, Ozgur S. Oguz<span class="equal-note">*Equal contribution</span></div>
+        <div class="pub-venue">arXiv preprint</div>
+        <div class="pub-desc">Achieves 150 FPS grasp‑pose estimation using a lightweight transformer backbone while maintaining 88 % accuracy on the Cornell Grasp dataset.</div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2311.13986" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/asyncs/FViT-Grasp" target="_blank" rel="noopener noreferrer">Code</a> 
+        </div>
+      </div>
+    <!-- Add more preprints here -->
+
+  </div>
+</body>
+</html> 

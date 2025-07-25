@@ -1,9 +1,57 @@
----
-layout: page
-permalink: /404.html
-title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
-redirect: true
----
-
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Not Found</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f0;
+      color: #181818;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inconsolata', monospace;
+    }
+    .container {
+      max-width: 900px;
+      margin-left: 3vw;
+      padding: 4rem 2rem 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .notfound {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #2201B1;
+      margin-bottom: 1.2rem;
+      letter-spacing: -1px;
+    }
+    .desc {
+      font-size: 1.25rem;
+      color: #222;
+      margin-bottom: 2.5rem;
+    }
+    .home-link {
+      color: #2201B1;
+      text-decoration: underline;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      display: inline-block;
+    }
+    .home-link:hover {
+      color: #181818;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="notfound">404</div>
+    <div class="desc">Sorry, the page you are looking for does not exist.<br>
+      You may have mistyped the address or the page may have moved.</div>
+    <a class="home-link" href="index.html">&larr; Back to Home</a>
+  </div>
+</body>
+</html>

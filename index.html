@@ -3,9 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello, world!</title>
+  <title>Arda Sarp Yenicesu</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f0;
+      color: #181818;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inconsolata', monospace;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 2.5rem 0 2.5rem 3vw;
+      padding: 0 2rem 0 0;
+      background: #fff8f0;
+      min-height: 56px;
+    }
+    .name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color:#2201B1;
+      margin-left: 1.5rem;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+      color: #181818;
+      font-weight: 500;
+      opacity: 0.85;
+      transition: opacity 0.2s, text-decoration-thickness 0.2s;
+      font-size: 1.05rem;
+    }
+    .nav-links a.active {
+      text-decoration-thickness: 4px;
+      opacity: 1;
+      color:#2201B1;
+    }
+    .nav-links a:hover {
+      opacity: 1;
+      color:#2201B1;
+    }
+    .container {
+      max-width: 900px;
+      margin-left: 3vw;
+      padding: 0 2rem 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .bio {
+      font-size: 1.13rem;
+      line-height: 1.7;
+      color: #222;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem;
+      text-align: left;
+      white-space: pre-line;
+    }
+    h2 {
+      color:#2201B1;
+    }
+    .news-block {
+      background: #f3f6ff;
+      border-left: 4px solid#2201B1;
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      max-width: 700px;
+      color: #181818;
+    }
+    @media (max-width: 800px) {
+      .navbar, .container {
+        max-width: 98vw;
+        margin-left: 2vw;
+        padding-right: 1rem;
+      }
+      .name { margin-left: 1rem; }
+    }
+    @media (max-width: 500px) {
+      .navbar, .container {
+        margin-left: 0.5vw;
+        padding-right: 0.5rem;
+      }
+      .nav-links { gap: 1rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <div class="navbar">
+    <div class="name">Arda Sarp Yenicesu</div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="contact.html">Contact</a>
+      <a href="YenicesuCV.pdf" target="_blank" rel="noopener">CV</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bio">
+I'm an AI researcher with a background in robotics and deep learning, driven by the challenge of making intelligent systems actually behave intelligently in the real world. During my M.S. at Bilkent University, I worked on Task and Motion Planning (TAMP) in the LIRA Lab, where I focused on bridging the gap between high-level reasoning and low-level motion—basically, helping robots think and move more like living systems.
+
+My work was inspired by how biological systems adapt and structure behavior in complex settings. Before that, I built a strong foundation in electrical engineering and machine learning during my undergrad at Bilkent.
+
+I'm always up for discussions. Feel free to <a href="https://www.linkedin.com/in/arda-sarp-yenicesu/" target="_blank" rel="noopener">reach out</a>.
+    </div>
+
+    <h2 style="margin-top:2.5rem;margin-bottom:1.2rem;color:#2201B1;font-size:1.35rem;letter-spacing:-0.5px;">Latest News</h2>
+    <div class="news-block">
+      <strong>Paper accepted at Pattern Recognition!</strong><br>
+      Excited to share that our paper, <em>"Locally Adaptive One-Class Classifier Fusion with Dynamic lp-Norm Constraints for Robust Anomaly Detection"</em> has been accepted for publication in Pattern Recognition.<br><br>
+      In this work, we introduce a novel ensemble anomaly detection framework that dynamically adapts classifier fusion weights using localized lp-norm constraints, enabling improved robustness to data imbalance and distributional shifts. This approach achieves significant computational gains with an interior-point optimization method and excels across both benchmark datasets and real-world temporal sequences.<br><br>
+      A key highlight of this work is the introduction of LiRAnomaly, a novel robotics anomaly detection dataset based on pick-and-place tasks using a Franka EMIKA robot. The dataset captures both static and temporal anomalies—from sensor occlusions to trajectory obstructions—making it a valuable benchmark for safety-critical robotic manipulation.
+    </div>
+    <div class="news-block">
+      <strong>Paper accepted at IEEE RA-L!</strong><br>
+      Excited to share that our paper, <em>"H-MaP: An Iterative and Hybrid Sequential Manipulation Planner"</em> has been accepted for publication in IEEE Robotics and Automation Letters (RA-L).<br><br>
+      In this work, we present a hybrid approach that reduces configuration space dimensionality by decoupling object trajectory planning from manipulation planning, enabling robots to handle complex tasks involving tool use and bimanual coordination.
+    </div>
+    <!-- Add more news posts here -->
+  </div>
 </body>
 </html> 
