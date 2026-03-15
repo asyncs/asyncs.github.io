@@ -6,6 +6,9 @@
   <title>Arda Sarp Yenicesu</title>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       background: #fff8f0;
       color: #181818;
@@ -35,6 +38,7 @@
       display: flex;
       gap: 2rem;
       align-items: center;
+      flex-wrap: wrap;
     }
     .nav-links a {
       text-decoration: underline;
@@ -71,6 +75,7 @@
       margin-bottom: 2.5rem;
       text-align: left;
       white-space: pre-line;
+      overflow-wrap: anywhere;
     }
     h2 {
       color:#2201B1;
@@ -83,6 +88,7 @@
       border-radius: 0.5rem;
       max-width: 700px;
       color: #181818;
+      overflow-wrap: anywhere;
     }
     @media (max-width: 800px) {
       .navbar, .container {
@@ -92,12 +98,57 @@
       }
       .name { margin-left: 1rem; }
     }
-    @media (max-width: 500px) {
-      .navbar, .container {
-        margin-left: 0.5vw;
-        padding-right: 0.5rem;
+    @media (max-width: 720px) {
+      body {
+        padding: 0 1rem 1.5rem;
       }
-      .nav-links { gap: 1rem; }
+      .navbar, .container {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .navbar {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+      }
+      .name {
+        margin-left: 0;
+        white-space: normal;
+      }
+      .nav-links {
+        width: 100%;
+        gap: 0.75rem 1.25rem;
+      }
+      .nav-links a {
+        font-size: 1rem;
+      }
+      .container {
+        padding-bottom: 1rem;
+      }
+      .bio {
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+      .news-block {
+        width: 100%;
+        max-width: none;
+        padding: 1rem 1.1rem;
+      }
+    }
+    @media (max-width: 420px) {
+      body {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+      .nav-links {
+        gap: 0.5rem 0.9rem;
+      }
     }
   </style>
 </head>
@@ -113,14 +164,19 @@
   </div>
   <div class="container">
     <div class="bio">
-I'm an AI researcher with a background in robotics and deep learning, driven by the challenge of making intelligent systems actually behave intelligently in the real world. During my M.S. at Bilkent University, I worked on Task and Motion Planning (TAMP) in the LIRA Lab, where I focused on bridging the gap between high-level reasoning and low-level motion—basically, helping robots think and move more like living systems.
-
-My work was inspired by how biological systems adapt and structure behavior in complex settings. Before that, I built a strong foundation in electrical engineering and machine learning during my undergrad at Bilkent.
-
-I'm always up for discussions. Feel free to <a href="https://www.linkedin.com/in/arda-sarp-yenicesu/" target="_blank" rel="noopener">reach out</a>.
+    I'm a Ph.D. student at <a href="https://www.kth.se/rpl" target="_blank" rel="noopener">RPL at KTH Royal Institute of Technology</a>. My research focuses on generating reliable and diverse synthetic data to improve vision-language-action (VLA) models, with the broader goal of making embodied AI systems more robust and effective in real-world settings.
+    
+    I received my M.S. in <a href="https://w3.cs.bilkent.edu.tr/graduate-programs/" target="_blank" rel="noopener">Computer Engineering at Bilkent University</a>, where I was a Graduate Research Assistant in the <a href="https://lira-lab.github.io/" target="_blank" rel="noopener">LiRA Lab</a>. During my M.S., I worked on task and motion planning, interpretable decision-making for robotic manipulation, and reinforcement learning. Before that, I earned my B.S. in <a href="https://ee.bilkent.edu.tr/en/" target="_blank" rel="noopener">Electrical and Electronics Engineering at Bilkent University</a>.
+    
+    I'm always up for discussions. Feel free to <a href="https://www.linkedin.com/in/arda-sarp-yenicesu/" target="_blank" rel="noopener">reach out</a>.
     </div>
 
     <h2 style="margin-top:2.5rem;margin-bottom:1.2rem;color:#2201B1;font-size:1.35rem;letter-spacing:-0.5px;">Latest News</h2>
+    <div class="news-block">
+      <strong>Paper accepted at Robotics and Autonomous Systems!</strong><br>
+      Excited to share that our paper, <em>"Interpretable Responsibility Sharing as a Heuristic for Task and Motion Planning"</em> has been accepted for publication in the Special Issue <em>"Planning and Learning for Autonomous Robotics"</em> of Robotics and Autonomous Systems.<br><br>
+      In this work, we introduce Interpretable Responsibility Sharing (IRS), a heuristic for task and motion planning that helps robots make more efficient and explainable decisions by leveraging human-centric environmental bias. By reasoning about when to use auxiliary objects such as trays and pitchers, our approach improves planning effectiveness while maintaining interpretability through rule-based decision-making. 
+    </div>
     <div class="news-block">
       <strong>Paper accepted at Pattern Recognition!</strong><br>
       Excited to share that our paper, <em>"Locally Adaptive One-Class Classifier Fusion with Dynamic lp-Norm Constraints for Robust Anomaly Detection"</em> has been accepted for publication in Pattern Recognition.<br><br>
